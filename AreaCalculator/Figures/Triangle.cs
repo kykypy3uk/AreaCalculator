@@ -30,17 +30,10 @@ namespace AreaCalculatorLib.Figures
             set { c = value > 0 ? value : -value; }
         }
 
-        protected Triangle()
-        {
-
-        }
-
         public Triangle(double a, double b, double c)
         {
             if (a + b <= c || a + c <= b || b + c <= a)
-            {
                 throw new ArgumentOutOfRangeException("Это не треугольник");
-            }
             else
             {
                     A = a;

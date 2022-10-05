@@ -16,11 +16,6 @@ namespace AreaCalculatorLib.Figures
             set { radius = value > 0 ? value : -value; }
         }
 
-        protected Circle()
-        {
-
-        }
-
         public Circle(double radius)
         {
             Radius = radius;
