@@ -1,4 +1,4 @@
-﻿namespace AreaCalculatorLib
+﻿namespace AreaCalculatorLib.Shapes
 {
     public interface IShape
     {

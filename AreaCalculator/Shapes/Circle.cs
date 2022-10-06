@@ -1,4 +1,6 @@
-﻿namespace AreaCalculatorLib.Figures
+﻿using AreaCalculatorLib.Shapes;
+
+namespace AreaCalculatorLib.Figures
 {
     public class Circle : IShape
     {

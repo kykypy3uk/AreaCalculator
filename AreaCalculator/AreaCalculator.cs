@@ -1,4 +1,6 @@
-﻿namespace AreaCalculatorLib
+﻿using AreaCalculatorLib.Shapes;
+
+namespace AreaCalculatorLib
 {
     public class AreaCalculator
     {
