@@ -10,7 +10,7 @@
             double b = 4.0;
             double c = 5.0;
             Triangle triangle = new Triangle(a, b, c);
-            double area = triangle.Area();
+            double area = triangle.GetArea();
 
             Assert.IsTrue(area > 5.99 && area <= 6.0);
         }

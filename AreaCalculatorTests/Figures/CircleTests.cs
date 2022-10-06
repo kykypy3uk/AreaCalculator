@@ -9,7 +9,7 @@
             double radius = 3.0;
             double expectedArea = Math.PI * Math.Pow(3, 2);
             Circle circle = new Circle(radius);
-            double area = circle.Area();
+            double area = circle.GetArea();
 
             Assert.AreEqual(expectedArea, area);
         }

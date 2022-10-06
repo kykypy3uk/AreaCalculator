@@ -1,13 +1,13 @@
 ﻿namespace AreaCalculatorLib.Figures
 {
-    public class Circle : IFigure
+    public class Circle : IShape
     {
         private double radius;
 
         public double Radius
         {
-            get { return radius; }
-            set { radius = value > 0 ? value : -value; }
+            get => radius;
+            set => radius = value > 0 ? value : -value;
         }
 
         public Circle(double radius)
@@ -15,7 +15,7 @@
             Radius = radius;
         }
 
-        public double Area()
+        public double GetArea()
         {
             double S = Math.PI * Radius * Radius;
 

@@ -2,15 +2,9 @@
 {
     public class AreaCalculator
     {
-        public double Calculate(IFigure figure)
+        public double GetArea(IShape figure)
         {
-            if (figure != null)
-            {
-                double S = figure.Area();
-
-                return S;
-            }
-            else throw new NullReferenceException();
+            return figure.GetArea();
         }
     }
 }

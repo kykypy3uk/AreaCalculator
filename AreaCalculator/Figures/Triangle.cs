@@ -1,6 +1,6 @@
 ﻿namespace AreaCalculatorLib.Figures
 {
-    public class Triangle : IFigure
+    public class Triangle : IShape
     {
         private double a;
         private double b;
@@ -8,20 +8,20 @@
 
         public double A
         {
-            get { return a; }
-            set { a = value > 0 ? value : -value; }
+            get => a;
+            set => a = value > 0 ? value : -value;
         }
 
         public double B
         {
-            get { return b; }
-            set { b = value > 0 ? value : -value; }
+            get => b;
+            set => b = value > 0 ? value : -value;
         }
 
         public double C
         {
-            get { return c; }
-            set { c = value > 0 ? value : -value; }
+            get => c;
+            set => c = value > 0 ? value : -value;
         }
 
         public Triangle(double a, double b, double c)
@@ -36,7 +36,7 @@
             }
         }
 
-        public double Area()
+        public double GetArea()
         {
             double p = (A + B + C) / 2;
             double S = Math.Sqrt(p * (p - A) * (p - B) * (p - C));
